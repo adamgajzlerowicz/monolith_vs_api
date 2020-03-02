@@ -1,0 +1,10 @@
+<h1>Example App: Home</h1>
+
+<ul class="list-group">
+    {{#each users}}
+        <li class="list-group-item">
+            {{this.id}}:
+            <a href="/{{this.id}}">{{this.name}}</a>
+        </li>
+    {{/each}}
+</ul>
